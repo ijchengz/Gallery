@@ -18,7 +18,7 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
     fun fetchData() {
         val stringRequest = StringRequest(
             Request.Method.GET,
-            getURL(),
+            getUrl(),
             Response.Listener {
                 _photoListLive.value = Gson().fromJson(it, Pixabay::class.java).hits.toList()
             },
@@ -29,19 +29,10 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
         VolleySingleton.getInstance(getApplication()).requestQueue.add(stringRequest)
     }
 
-    private fun getURL(): String {
-        return "https://pixabay.com/api/?key=&q=${keywords.random()}"
+    private fun getUrl(): String {
+        return "https://pixabay.com/api/?key=12472743-874dc01dadd26dc44e0801d61&q=${keyWords.random()}&per_page=100"
     }
 
-    private val keywords = arrayOf(
-        "buffalo",
-        "antelope",
-        "eagle",
-        "lion",
-        "leopard",
-        "elephant",
-        "giraffe",
-        "tiger",
-        "jackal"
-    )
+    private val keyWords =
+        arrayOf("animal", "bird", "fish", "lion", "elephant", "giraffe", "monkey", "jackal")
 }
