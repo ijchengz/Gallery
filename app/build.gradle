@@ -41,7 +41,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
     implementation 'io.supercharge:shimmerlayout:2.1.0'
-    implementation 'com.github.chrisbanes:PhotoView:library:2.0.0'
+//    implementation 'com.github.chrisbanes:PhotoView:library:2.0.0'
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
