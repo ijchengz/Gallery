@@ -30,7 +30,7 @@ class PagerPhotoListAdapter : ListAdapter<PhotoItem, PagerPhotoViewHolder>(DiffC
 
     override fun onBindViewHolder(holder: PagerPhotoViewHolder, position: Int) {
         Glide.with(holder.itemView)
-            .load(getItem(position))
+            .load(getItem(position).previewUrl)
             .placeholder(R.drawable.ic_baseline_insert_photo_gray_24)
             .into(holder.itemView.pagerPhoto)
     }

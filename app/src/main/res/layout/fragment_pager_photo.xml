@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_dark"
     tools:context=".PagerPhotoFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -17,6 +18,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="50dp"
         android:gravity="bottom|center_horizontal"
-        android:text="@string/hello_blank_fragment" />
+        android:text="@string/hello_blank_fragment"
+        android:textColor="@android:color/background_light" />
 
 </FrameLayout>

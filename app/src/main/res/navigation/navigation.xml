@@ -9,5 +9,14 @@
         android:id="@+id/galleryFragment"
         android:name="com.example.pagergallery.GalleryFragment"
         android:label="Gallery"
-        tools:layout="@layout/fragment_gallery"/>
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_pagerPhotoFragment"
+            app:destination="@id/pagerPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagerPhotoFragment"
+        android:name="com.example.pagergallery.PagerPhotoFragment"
+        android:label="PagerPhoto"
+        tools:layout="@layout/fragment_pager_photo" />
 </navigation>
