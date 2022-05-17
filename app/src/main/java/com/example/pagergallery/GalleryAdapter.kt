@@ -41,7 +41,7 @@ class GalleryAdapter : ListAdapter<PhotoItem, MyViewHolder>(DIFFCALLBACK) {
         }
         Glide.with(holder.itemView)
             .load(getItem(position).previewUrl)
-            .placeholder(R.drawable.ic_baseline_insert_photo_gray_24)
+            .placeholder(R.drawable.photo_placeholder)
             .listener(object : RequestListener<Drawable> {
                 override fun onLoadFailed(
                     e: GlideException?,

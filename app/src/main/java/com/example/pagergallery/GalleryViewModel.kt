@@ -34,5 +34,5 @@ class GalleryViewModel(application: Application) : AndroidViewModel(application)
     }
 
     private val keyWords =
-        arrayOf("animal", "bird", "fish", "lion", "elephant", "giraffe", "monkey", "jackal")
+        arrayOf("earth", "ocean", "mountain", "gallery", "animal", "people", "bird", "fish")
 }
