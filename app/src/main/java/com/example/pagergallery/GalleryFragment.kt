@@ -1,4 +1,4 @@
-package com.example.gallery
+package com.example.pagergallery
 
 import android.os.Bundle
 import android.os.Handler

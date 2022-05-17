@@ -1,4 +1,4 @@
-package com.example.gallery
+package com.example.pagergallery
 
 import android.app.Application
 import android.util.Log
