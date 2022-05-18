@@ -39,6 +39,7 @@ class GalleryAdapter : ListAdapter<PhotoItem, MyViewHolder>(DIFFCALLBACK) {
             setShimmerAngle(0)
             startShimmerAnimation()
         }
+        holder.itemView.imageView.layoutParams.height = getItem(position).photoHeight
         Glide.with(holder.itemView)
             .load(getItem(position).previewUrl)
             .placeholder(R.drawable.photo_placeholder)
